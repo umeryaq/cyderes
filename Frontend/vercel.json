@@ -1,10 +1,15 @@
 {
-  "functions": {
-    "my-function": {
-      "runtime": {
-        "type": "docker",
-        "image": "umeryaq/cydres"
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@vercel/static-build",
+      "config": {
+        "buildCommand": "npm install && npm run build",
+        "outputDirectory": "build"
       }
     }
-  }
+  ],
+  "routes": [
+    { "src": "/(.*)", "dest": "/index.html" }
+  ]
 }
