@@ -1,0 +1,10 @@
+{
+  "functions": {
+    "my-function": {
+      "runtime": {
+        "type": "docker",
+        "image": "umeryaq/cydres"
+      }
+    }
+  }
+}
