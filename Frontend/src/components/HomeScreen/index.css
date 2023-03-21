@@ -1,0 +1,21 @@
+.home__container {
+  height: 35.7143rem;
+  width: 20%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  box-shadow: 0 2px 6px gray;
+  border-radius: 6px;
+  margin-top: 20rem;
+  padding: 2rem;
+}
+
+.heading {
+  font-weight: 400;
+}
+
+input {
+  width: 70%;
+}
